@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function over()
+    {
+        document.getElementById("tx").value="Mouse In"
+    }
+    function out()
+    {
+        document.getElementById("tx").value="Mouse out"
+    }
+</script>
+</head>
+<body>
+
+    <h1> Demo of JavaScript Mouse Events</h1>
+    <input type="text" id="tx" onmouseover="over()" onmouseout="out()" width=300 height=30/>
+    
+</body>
+</html>
