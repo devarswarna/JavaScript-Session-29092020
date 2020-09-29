@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Demo of 4 types of outout statements in javascript</h1>
+<h3>
+    <ol>
+        <li>innerHTML</li>
+        <li>document.write</li>
+        <li>window.alert</li>
+        <li>console.log</li>
+    </ol>
+</h3>
+<h2>Output rendered using innerHTML</h2>
+<p id="demo1"></p>
+<h2>Output in textbox rendered using value attribute</h2>
+<input type="text" id="demo2" width=300 height=20/>
+
+<script>
+document.write("<br><h2> Output rendered using documemt.write </h2>" + (30-5));
+document.getElementById("demo1").innerHTML="Manipal Global";
+document.getElementById("demo2").value="Manipal Global";
+var n1=45;
+var n2=23;
+window.alert("Total value is " + (n1+n2));
+console.log("Successfully executed!!!!!!");
+</script>
+</body>
+</html>
