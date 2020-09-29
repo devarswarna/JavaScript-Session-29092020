@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Object Example</h1>
+
+        FirstName: <input type="text" id="demo1", width="500", height="20"/><br/>
+        LasrName: <input type="text" id="demo2", width="500", height="20"/><br/>
+        ID:  <input type="text" id="demo3", width="500", height="20"/><br/>
+        FULL Name: <input type="text" id="demo4", width="500", height="20"/><br/>
+       <button type="button" onclick="fun1()">Get Details</button>
+        
+    <Script>
+     var person={
+     firstName : "SwarnaLatha",
+     lastName : "Devarakonda",
+     id:1000,
+
+     fullName : function()
+     {
+         return this.firstName+this.lastName;
+     }
+     };
+
+function fun1()
+{
+document.getElementById("demo1").value=person.firstName;
+document.getElementById("demo2").value=person.lastName;
+document.getElementById("demo3").value=person.id;
+document.getElementById("demo4").value=person.fullName();
+
+}
+
+</Script>
+
+    </body>
+</html>
