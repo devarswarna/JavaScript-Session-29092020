@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body onload="init()">
+<h1>Demo of JS Functions</h1>
+<ol>
+    <li>Function can be called when any event occurs like button click or mouseover</li>
+    <li>Fuction can be called from script tag</li>
+    <li>Functions can be called automatically</li>
+</ol>
+<h1>Function return value from init</h1>
+<p id="demo1"></p>
+<h2>Function return value using onClick event</h2>
+<input type="text" id="demo2" width="300" height="10"/>
+<button type="button" onClick="toCelsius()">toCelsius</button>
+<h3>Function can be called from script</h3> 
+<p id="demo3"></p>
+<script>
+ //var far=window.prompt("Enter the temp in farenhit");
+ var x=45;
+ var y=25;
+ document.getElementById("demo3").innerHTML=fun1(x,y);
+ function init()
+ {
+     document.getElementById("demo1").innerHTML="From init method";
+ }   
+ function toCelsius()
+ {
+   var far=document.getElementById("demo2").value;
+    document.getElementById("demo2").value=(5/9)*(far-32);
+ }
+
+function fun1(a,b)
+{
+    return a+b;
+}
+
+</script>
+    </body>
+</html>
